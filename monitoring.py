@@ -6,7 +6,7 @@ from sklearn.base import TransformerMixin
 class DataMonitor:
     _max_warning = 'found {howmany:d} runtime value(s) for feature "{feature}" greater than trained max.'
     _min_warning = 'found {howmany:d} runtime value(s) for feature "{feature}" less than trained min.'
-    _categorical_warning = 'found {howmany:d} categorical runtime values for feature "{feature}" ' \
+    _categorical_warning = 'found {howmany:d} categorical runtime value(s) for feature "{feature}" ' \
                             'not in training data: {values!r}.'
 
     def __init__(self):
